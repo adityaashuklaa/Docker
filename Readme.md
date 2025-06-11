@@ -16,5 +16,5 @@
 
 ## Example for starting a MongoDB Container
 - docker run -d -p 27017:27017 mongo 
-- docker is not the only way to create containers, just a popular choice among developers.
+- docker is not the only way to create containers, just a popular choice among developers.  
 
