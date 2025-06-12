@@ -9,7 +9,7 @@
 - Starting projects locally/ auxillary services locally.
 - Auxilary Services => Postgress
 
-## Containerization
+## Containerization  
 - A container is an enviroment, or mini machine working on your main machine. 
 - Container is a way to package and distribute software applications in a way that makes them easy to deploy and run consistently across different environments.
 - Runs on any machine and runs consistently.
