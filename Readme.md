@@ -18,3 +18,7 @@
 - docker run -d -p 27017:27017 mongo 
 - docker is not the only way to create containers, just a popular choice among developers.  
 - Docker helps in creating containers, that reduce the hectic way of installing softwares GUI and  fill your computers with the unneccessary softwares, instead it provides you a container which has everything built in, and you can access everything just by a single command. 
+
+## You can push IMAGES to DOCKER REGISTRIES
+- Image => Anything you want to expose to the world, for other developers as well. 
+- First the image is being created. It is basically a CD drive kind of thing. 
