@@ -33,3 +33,7 @@
 ## Port Mapping
 - docker run -p 27017:27017 mongo 
 - This command will map the machine port to the container port of the mongo image.
+- If you don't want to see any logs, you can run the docker to the detach mode by running the command : 
+docker run -d -p 27017:27017 mongo
+- docker ps command shows the current containers being running
+- If you want to stop the container just run the command docker kill (container name)
