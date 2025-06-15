@@ -17,4 +17,4 @@
 ## Example for starting a MongoDB Container
 - docker run -d -p 27017:27017 mongo 
 - docker is not the only way to create containers, just a popular choice among developers.  
-
+- Docker helps in creating containers, that reduce the hectic way of installing softwares GUI and  fill your computers with the unneccessary softwares, instead it provides you a container which has everything built in, and you can access everything just by a single command. 
