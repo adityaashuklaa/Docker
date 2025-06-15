@@ -26,6 +26,10 @@
 - Image in EXECUTION is called a container.
 
 ## Common commands
-- docker run
-- docker ps
+- docker run (name of file)
+- docker ps 
 - docker kill
+
+## Port Mapping
+- docker run -p 27017:27017 mongo 
+- This command will map the machine port to the container port of the mongo image.
