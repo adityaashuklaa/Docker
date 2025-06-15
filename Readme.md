@@ -24,3 +24,8 @@
 - First the image is being created. It is basically a CD drive kind of thing. 
 - You can get the images for the registeries locally in your machine. (Dockerhub)
 - Image in EXECUTION is called a container.
+
+## Common commands
+- docker run
+- docker ps
+- docker kill
