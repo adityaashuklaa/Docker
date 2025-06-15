@@ -22,3 +22,4 @@
 ## You can push IMAGES to DOCKER REGISTRIES
 - Image => Anything you want to expose to the world, for other developers as well. 
 - First the image is being created. It is basically a CD drive kind of thing. 
+- You can get the images for the registeries locally in your machine. (Dockerhub)
