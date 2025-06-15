@@ -37,3 +37,8 @@
 docker run -d -p 27017:27017 mongo
 - docker ps command shows the current containers being running
 - If you want to stop the container just run the command docker kill (container ID)
+
+## For starting Postgres
+- This is the command to start postgres locally on your machine. 
+- docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
+- -e is for environment variables.
