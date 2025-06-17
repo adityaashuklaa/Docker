@@ -51,3 +51,9 @@ docker run -d -p 27017:27017 mongo
 ## DockerFile
 - If you want to create an image from your own code, that you can push to dockerhub, you need to create a dockerfile for your application.
 - A Dockerfile is a text document that contains all the commands a user could call on the command line to create an image. 
+
+## Basic Boiler Plate Code for Docker File
+- FROM node:16-alpine  ==> Base Image
+- WORKDIR /app ==> Defining Path for Working Directory.
+- COPY .. => This commands takes two argument, First argument is the files of the src directory and copy it to the Working Directory. First argument is basically every files, you can see by doing ls.
+- ![Example Image](image.png)
