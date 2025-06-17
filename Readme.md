@@ -47,3 +47,7 @@ docker run -d -p 27017:27017 mongo
 ## Docker Kill
 - docker kill {contaainerId} => this command will kill the container
 - To remove the image docker rmi {image name} command is being used. 
+
+## DockerFile
+- If you want to create an image from your own code, that you can push to dockerhub, you need to create a dockerfile for your application.
+- A Dockerfile is a text document that contains all the commands a user could call on the command line to create an image. 
