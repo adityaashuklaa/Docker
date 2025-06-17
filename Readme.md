@@ -63,6 +63,8 @@ docker run -d -p 27017:27017 mongo
 
 - Run command is used to boostrapping the resources like installing node and express, while CMD is used to actually run the containers.
 - Node Modules of your root machine is not needed by the image so it is a good practice to keep it inside .dockerignore file.
+- After all this the only comman needed to create the image is : docker build -t "tagname" => 
+- docker build -t adityaDocker
 
 
 - ![Example Image](image.png)
