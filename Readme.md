@@ -42,6 +42,7 @@ docker run -d -p 27017:27017 mongo
 - This is the command to start postgres locally on your machine. 
 - docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres  
 - -e is for environment variables that is being used to create environment.
+- docker run {containerID} is the command to run a container
 
 ## Docker Kill
 - docker kill {contaainerId} => this command will kill the container
