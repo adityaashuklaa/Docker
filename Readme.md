@@ -61,5 +61,7 @@ docker run -d -p 27017:27017 mongo
 - EXPOSE 3000 - Expose Ports
 - CMD ["node", "dist/index.js"] => Final command that runs while running the container.
 
+- Run command is used to boostrapping the resources like installing node and express, while CMD is used to actually run the containers.
+
 
 - ![Example Image](image.png)
