@@ -45,4 +45,4 @@ docker run -d -p 27017:27017 mongo
 
 ## Docker Kill
 - docker kill {contaainerId} => this command will kill the container
-- To remove the image rme {image name} command is being used. 
+- To remove the image docker rmi {image name} command is being used. 
