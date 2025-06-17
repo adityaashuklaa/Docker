@@ -56,4 +56,6 @@ docker run -d -p 27017:27017 mongo
 - FROM node:16-alpine  ==> Base Image
 - WORKDIR /app ==> Defining Path for Working Directory.
 - COPY .. => This commands takes two argument, First argument is the files of the src directory and copy it to the Working Directory. First argument is basically every files, you can see by doing ls.
+
+
 - ![Example Image](image.png)
