@@ -69,6 +69,7 @@ docker run -d -p 27017:27017 mongo
 
 - ![Example Image](image.png)
 - Docker is  really good at caching.
+- Also, if you're are database inside a container, whenever you'll delete the container the database will also be erased. 
 
 ## More Commands
 -  docker exec => This command is used to execute a command inside a container.
