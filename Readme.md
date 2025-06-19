@@ -68,6 +68,7 @@ docker run -d -p 27017:27017 mongo
 
 
 - ![Example Image](image.png)
+- Docker is  really good at caching.
 
 ## More Commands
 -  docker exec => This command is used to execute a command inside a container.
