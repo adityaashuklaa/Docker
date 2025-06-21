@@ -112,3 +112,13 @@ CMD ["node", "dist/index.js",]
 ![alt text](image-2.png)
 - Containers are transactory, whatever data you put into it, it goes away as soon as you kill the container.
 - Volumes persist even if the container crashes, good use case if of creating volumes for the Database.
+
+## Volumes
+- Creating a volume using : docker volume create volume_database
+- Mount the folder in mongo which actually stores the data to this volume
+docker run -v volume_database:/data/db -p 27017:27017 mongo
+
+## Network
+- In Docker, a Network is a powerful feature that allows containers to communicate with eachother and with the outside world.
+- Docker Containers can't talk to eachother by Default. 
+- localhost on docker container means it's own network and not the network of the host machine.
