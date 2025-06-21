@@ -110,3 +110,4 @@ CMD ["node", "dist/index.js",]
 1. Need to persist data across docker restarts
 2. Need to allow containers to talk to each other 
 ![alt text](image-2.png)
+- Containers are transactory, whatever data you put into it, it goes away as soon as you kill the container.
