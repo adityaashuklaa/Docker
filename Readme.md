@@ -122,3 +122,13 @@ docker run -v volume_database:/data/db -p 27017:27017 mongo
 - In Docker, a Network is a powerful feature that allows containers to communicate with eachother and with the outside world.
 - Docker Containers can't talk to eachother by Default. 
 - localhost on docker container means it's own network and not the network of the host machine.
+- docker network create my_custom_network
+1. Start the backend process with the network attached to it. 
+docker run -d -p 3000:3000 --name backend --network my_custom_network image_tag
+2. Start mongo on the same network
+docker run -d -v volume_database:/data/db --name mongo  --network my_custom_network
+3. Check logs to ensure DB connection
+docker logs <container_id>
+
+## Product Level Docker
+p5-js web editor github => https://github.com/processing/p5.js-web-editor
