@@ -111,3 +111,4 @@ CMD ["node", "dist/index.js",]
 2. Need to allow containers to talk to each other 
 ![alt text](image-2.png)
 - Containers are transactory, whatever data you put into it, it goes away as soon as you kill the container.
+- Volumes persist even if the container crashes, good use case if of creating volumes for the Database.
