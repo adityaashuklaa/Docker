@@ -75,3 +75,5 @@ docker run -d -p 27017:27017 mongo
 ## More Commands
 -  docker exec => This command is used to execute a command inside a container.
  
+## Layers in Docker
+- In Docker, layers are a fundamental part of the image architecture that allows Docker to be efficient, fast and portable. A Docker Image is essentially built up from a series of layers, each representing a set of differences from the previous layer. 
