@@ -74,6 +74,7 @@ docker run -d -p 27017:27017 mongo
 
 ## More Commands
 -  docker exec => This command is used to execute a command inside a container.
+- docker images => Shows every image being present in your machine.
  
 ## Layers in Docker
 - In Docker, layers are a fundamental part of the image architecture that allows Docker to be efficient, fast and portable. A Docker Image is essentially built up from a series of layers, each representing a set of differences from the previous layer. 
@@ -103,3 +104,9 @@ CMD ["node", "dist/index.js",]
 
 - The things that you change the most has to be at the very end, changing the node modules, package.json is a expensive change.
 - This code make sure the expensive step of npm install is being cached.
+
+## Network and Volumes
+- Network and volumes are concepts that become important when you have multiple containers running in which you 
+1. Need to persist data across docker restarts
+2. Need to allow containers to talk to each other 
+![alt text](image-2.png)
