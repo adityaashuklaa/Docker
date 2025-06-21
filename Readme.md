@@ -80,3 +80,23 @@ docker run -d -p 27017:27017 mongo
 - ![alt text](image-1.png)
 - The power of layers is Caching. As you repeatadly run the command, due to caching the command tend to run faster as compared to the previous time.
 - If the base image changes there no use of layers, cause the whole architecture get shattered.
+- You can share Layers across images. 
+- Whenever you create a Dockerfile, you make sure that across rebuilds the number of cached layers are high than uncached layers.
+
+## More Optimized Docker File Boiler Plate 
+FROM node:20
+
+WORKDIR /user/src/app
+
+COPY package* .
+COPY ./prisma .
+
+RUN npm install
+RUN npx prisma generate
+
+COPY .. 
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["node", "dist/index.js",]
