@@ -78,3 +78,4 @@ docker run -d -p 27017:27017 mongo
 ## Layers in Docker
 - In Docker, layers are a fundamental part of the image architecture that allows Docker to be efficient, fast and portable. A Docker Image is essentially built up from a series of layers, each representing a set of differences from the previous layer. 
 - ![alt text](image-1.png)
+- The power of layers is Caching. As you repeatadly run the command, due to caching the command tend to run faster as compared to the previous time.
