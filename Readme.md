@@ -136,3 +136,31 @@ p5-js web editor github => https://github.com/processing/p5.js-web-editor
 ## Docker Compose
 - It is a yml file, very similar to JSON. It holds key and values.
 - Docker compose is a tool designed to help you define and run multi-container docker applications. With Compose, you use a YAML file to configure your application's services, networks, and volumes. Then, with a single command, you can create and satrt all the services from your configuration.
+
+version: '3.8' => Version of Docker Compose
+services:
+    mongodb:  => Mongo Service
+        image: mongo
+        container_name: mongodb
+        ports: 
+            - "27017:27017"
+        volumes: 
+            - mongodb_data:/data/db
+    This code into a command will look like this :
+    docker run --name mongodb -p 27017:27017 -v mongodb_data:/data/db mongo
+
+    backend22: => Backend Service
+        build: . => When you want backend to build an image using docker file in the current container.
+        image: backend22
+        container_name: backend_app
+        depends_on: -mongodb
+        ports: 
+            - "3000: 3000" => Ports are Arrays, and this is the syntax to write Arrays in YAML.
+        environment: => Environment is Object.
+            - MONGO_URL: "mongodb://mongodb:27017"
+
+volumes:
+    mongodb_data:  => Volumes to Create(Does't need to have any value.)
+
+- To start all the services being mentioned in the docker file, you just need to run.
+docker-compose up
