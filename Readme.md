@@ -167,3 +167,5 @@ docker-compose up
 
 ## Bind Mounts
 - Binds mounts is useful when you want to bind your local machine file/folder to the file/folder being present inside the container.
+- command to bind the local folder to the docker folder, so that hot reloading works, which means what changes you make to the local folder will be displayed to the docker folder. 
+command => docker run -p 3000:3000 -v ./app:/nextapp/app nextapp
