@@ -118,7 +118,7 @@ CMD ["node", "dist/index.js",]
 - Mount the folder in mongo which actually stores the data to this volume
 docker run -v volume_database:/data/db -p 27017:27017 mongo
 
-## Network
+## Network  
 - In Docker, a Network is a powerful feature that allows containers to communicate with eachother and with the outside world.
 - Docker Containers can't talk to eachother by Default. 
 - localhost on docker container means it's own network and not the network of the host machine.
