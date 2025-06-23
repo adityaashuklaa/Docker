@@ -132,3 +132,7 @@ docker logs <container_id>
 
 ## Product Level Docker
 p5-js web editor github => https://github.com/processing/p5.js-web-editor
+
+## Docker Compose
+- It is a yml file, very similar to JSON. It holds key and values.
+- Docker compose is a tool designed to help you define and run multi-container docker applications. With Compose, you use a YAML file to configure your application's services, networks, and volumes. Then, with a single command, you can create and satrt all the services from your configuration.
