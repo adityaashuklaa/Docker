@@ -164,3 +164,6 @@ volumes:
 
 - To start all the services being mentioned in the docker file, you just need to run.
 docker-compose up
+
+## Bind Mounts
+- Binds mounts is useful when you want to bind your local machine file/folder to the file/folder being present inside the container.
